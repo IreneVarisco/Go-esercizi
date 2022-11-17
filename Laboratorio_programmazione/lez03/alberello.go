@@ -5,22 +5,22 @@ import "fmt"
 func main() {
 	var isco int
 	
-	fmt.Scan(&isco)
-
-	if isco>0{ 
+	fmt.Scan(&isco) //altezza chioma
+	//stampa chioma
+	if isco > 0{ 
 		for i:= 1; i <= isco; i++ {
-			for j:=1; j <= isco-i; j++ {
+			for j := 1; j <= isco-i; j++ {
 				fmt.Print(" ")
 			}
-			for n := 0; n < (i*2)-1; n++ {
+			for n := 0; n < (i*2) - 1; n++ {
 				fmt.Print("*")
 			}
 			fmt.Print("\n")
 		}
 	}
-
-	for i:= 0; i < 3; i++ {
-		for j:=1; j <= isco-2; j++ {
+	//stampa tronco
+	for i := 0; i < 3; i++ {
+		for j := 1; j <= isco - 2; j++ {
 			fmt.Print(" ")
 		}
 		for n := 0; n < 3; n++ {
