@@ -6,7 +6,8 @@ func main() {
 	var isco int
 	fmt.Println("inserire numero")
 	fmt.Scan(&isco)	
-	if isco > 0{
+	//controllo numero sia positivo
+	if isco > 0 {
 		StampaScala(isco)
 	}else {
 		fmt.Println("errore")
